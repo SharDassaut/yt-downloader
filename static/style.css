@@ -4,10 +4,13 @@
 }
 
 html{
-    background-color: #3B322C;
+    background-color: #0A0A0A;
 }
 
 h1{
-    color: #4E6151;
+    color: #B1B1B1;
 }
 
+input{
+    background-color: #B10023;
+}
