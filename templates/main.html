@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CUMVER</title>
+        <title>SERVUM</title>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
     </head>
     <body>
+        {% block content %}
         <h1>Link video o playlist a descaragr:</h1>
-        <input type="text" size="10" required length/>
+        <form method="post" name="ytdlp">
+        <input type="text" size="30" required length name="url"/>
+        <input type="submit" value="send" size="20">
+        </form>
+        {% endblock %}
     </body>
 </html>
