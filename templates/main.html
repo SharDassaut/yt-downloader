@@ -7,11 +7,13 @@
     </head>
     <body>
         {% block content %}
-        <h1>Link video o playlist a descaragr:</h1>
-        <form method="post" name="ytdlp">
-        <input type="text" size="30" required length name="url"/>
-        <input type="submit" value="send" size="50">
-        </form>
+        <div>
+            <h1>URL del video a descargar</h1>
+            <form method="post" name="ytdlp">
+            <input type="text" size="30" required length name="url"/>
+            <input type="submit" value="send" size="50">
+            </form>
+        </div>
         {% endblock %}
     </body>
 </html>
