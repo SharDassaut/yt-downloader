@@ -8,8 +8,11 @@ app = Flask(__name__)
 def hello_world():
     if request.method == "POST":
         link = request.form.get('url')
-        download(link)
-        return render_template('main.html')
+        return_value = download(link)
+        if return_value == 0:
+            return "Video descargado"
+        else:
+            return "Video no descargado"
     else:
         return render_template('main.html')
 
