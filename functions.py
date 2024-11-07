@@ -12,5 +12,3 @@ def download(link):
             return 0
         else:
             return 1
-
-download("https://youtu.be/BvulBSnAyg0?si=YQdeCYV76xVoBUhh")
